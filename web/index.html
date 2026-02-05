@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FileSync.app | Send files securely in real-time.</title>
+    <title>Newfront Cloud</title>
     <meta name="description" content="Send files securely from one device to many in real-time.">
     <meta charset="UTF-8">
     <link rel="icon" type="image/png" href="assets/icon.png">
@@ -25,7 +25,7 @@
   </head>
   <body>
     <div class="header">
-      <span id="theme-text" rel="preload" onclick="themeClick()" style="cursor:pointer">Dar</span>
+      <span id="theme-text" rel="preload" onclick="themeClick()" style="cursor:pointer">Dark</span>
       <span style="padding-left: 5px; padding-right: 5px;">|</span>
       <span id="about-text" rel="preload" onclick="aboutClick()" style="cursor:pointer">About</span>
     </div>
@@ -43,29 +43,29 @@
             </div>
           </div>
           <div class="col col-auto">
-            <h1 class="fw-semibold" style="font-family: Acme; font-size: 2.8rem; margin-bottom:0">FileSync</h1>
+            <h1 class="fw-semibold" style="font-family: Acme; font-size: 2.8rem; margin-bottom:0">FileSync - Newfront</h1>
           </div>
         </div>
-        <h2 class="fw-normal" style="margin:0; font-size: calc(1.2rem + 0.3vw)">Send files from one device to many in real-time.</h2>
+        <h2 class="fw-normal" style="margin:0; font-size: calc(1.2rem + 0.3vw)">Envie arquivos de um dispositivo para vários em tempo real.</h2>
 
         <!-- ABOUT -->
         <div id="about-div" class="p-4 box" style="margin-top:30px; display: none;">
           <p style="font-size: 2rem; margin:0; font-family: Acme;">About</p>
-          <p style="font-size: 1rem; margin-top:10px; margin-bottom: 1.5rem;">Designed to work on any device, anywhere!</p>
+          <p style="font-size: 1rem; margin-top:10px; margin-bottom: 1.5rem;">Projetado para funcionar em qualquer dispositivo, em qualquer lugar!</p>
           <hr>
-          <p style="text-align: justify; text-justify: inter-word;"><span style="font-family: Acme; font-size: 1rem; color:rgb(252, 145, 45);">FileSync.app</span> is a file sharing web application that allows users to transfer files between multiple devices with end-to-end encryption.</p>
-          <p style="text-align: justify; text-justify: inter-word;">No account creation or signups are required. It enables both one-to-one and many-to-many file transfers, works across various networks and devices, and requires no app installation.</p>
+          <p style="text-align: justify; text-justify: inter-word;"><span style="font-family: Acme; font-size: 1rem; color:rgb(252, 145, 45);">FileSync.app</span> É um aplicativo web de compartilhamento de arquivos que permite aos usuários transferir arquivos entre vários dispositivos com criptografia de ponta a ponta.</p>
+          <p style="text-align: justify; text-justify: inter-word;">Não é necessário criar conta nem se cadastrar. Permite transferências de arquivos tanto individuais quanto em grupo, funciona em diversas redes e dispositivos e não requer instalação de aplicativo.</p>
           <p style="font-size: 1.2rem; margin:0; margin-top:35px; margin-bottom:20px; font-family: Acme; font-size: 1.3rem; text-align:left; font-weight: 600;">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#198754" class="bi bi-layers" viewBox="0 0 16 16" style="margin-bottom: 5px; margin-right: 6px;">
               <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
             </svg>
             Under the hood
           </p>
-          <p style="text-align: justify; text-justify: inter-word;">FileSync uses <a href="https://github.com/peers/peerjs" target="_blank" style="text-decoration: none;">PeerJS</a> (a WebRTC wrapper) to transfer files between multiple devices. Files shared are peer-to-peer, which means there is a direct file transfer between the sender and receiver without any intermediate server. Your files remain private and secure throughout the entire transfer process.</p>
-          <p style="text-align: justify; text-justify: inter-word; margin-bottom: 20px">Do note that a <a href="https://github.com/peers/peerjs-server" target="_blank" style="text-decoration: none;">PeerJS server</a> is used to assist in the initial connection setup, ensuring all users can establish peer-to-peer connections effectively. Once the connections are established, the server steps back, allowing the direct transfer of files between the sender and the receiver. At no point during this process does the server have access to the file contents. It solely facilitates the connection between users without compromising the privacy or security of the files being shared.</p>
+          <p style="text-align: justify; text-justify: inter-word;">FileSync uses <a href="https://github.com/peers/peerjs" target="_blank" style="text-decoration: none;">PeerJS</a> (um wrapper WebRTC) para transferir arquivos entre vários dispositivos. Os arquivos compartilhados são ponto a ponto, o que significa que há uma transferência direta de arquivos entre o remetente e o destinatário, sem nenhum servidor intermediário. Seus arquivos permanecem privados e seguros durante todo o processo de transferência.</p>
+          <p style="text-align: justify; text-justify: inter-word; margin-bottom: 20px">Observe que um <a href="https://github.com/peers/peerjs-server" target="_blank" style="text-decoration: none;">PeerJS server</a> É utilizado para auxiliar na configuração inicial da conexão, garantindo que todos os usuários possam estabelecer conexões ponto a ponto de forma eficaz. Uma vez estabelecidas as conexões, o servidor se afasta, permitindo a transferência direta de arquivos entre o remetente e o destinatário. Em nenhum momento durante esse processo o servidor tem acesso ao conteúdo dos arquivos. Ele apenas facilita a conexão entre os usuários, sem comprometer a privacidade ou a segurança dos arquivos compartilhados.</p>
           <img id="comic-img" src="assets/comic.png" title="File Transfer - https://xkcd.com/949" alt="File Transfer - https://xkcd.com/949" style="width:100%; max-width: 456px">
           <p style="text-align:left; text-align: justify; text-justify: inter-word; margin-top:30px; margin-bottom:10px">Released under the MIT License.</p>
-          <p style="text-align:left; text-align: justify; text-justify: inter-word; margin:0"><a href="https://github.com/polius/filesync" target="_blank" style="text-decoration:none;">https://github.com/polius/filesync</a></p>
+          <p style="text-align:left; text-align: justify; text-justify: inter-word; margin:0"><a href="https://github.com/evertonpasqual/FileSync" target="_blank" style="text-decoration:none;">https://github.com/evertonpasqual/FileSync</a></p>
         </div>
 
         <!-- ERROR -->
@@ -411,7 +411,7 @@
 
         <!-- FOOTER -->
         <div id="footer" class="mx-auto pt-4 text-md-center">
-          <p class="fw-normal" style="font-size:14px; margin:0;">This platform uses end-to-end encryption to ensure your data is protected from unauthorized access.</p>
+          <p class="fw-normal" style="font-size:14px; margin:0;">Esta plataforma utiliza criptografia de ponta a ponta para garantir que seus dados estejam protegidos contra acesso não autorizado.</p>
         </div>
       </div>
     </div>

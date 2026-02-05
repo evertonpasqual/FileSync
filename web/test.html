@@ -11,8 +11,8 @@
   <h1>Test ICE Servers</h1>
   <hr />
   <p id="ip"></p>
-  <p id="stun">🔴 The STUN server is NOT reachable!</p>
-  <p id="turn">🔴 The TURN server is NOT reachable!</p>
+  <p id="stun">🔴 O servidor STUN está inacessível.!</p>
+  <p id="turn">🔴 O servidor TURN está inacessível.!</p>
   <p id="err"></p>
   <hr />
   <script>
@@ -57,13 +57,13 @@
           let address = e.candidate.address 
             ? e.candidate.address 
             : e.candidate.candidate.match(ip);
-          IP.innerHTML = '🟢 Your Public IP Address is ' + address;
-          Stun.innerHTML = '🟢 The STUN server is reachable!';
+          IP.innerHTML = '🟢 Seu endereço IP público é ' + address;
+          Stun.innerHTML = '🟢 O servidor STUN está acessível.!';
         }
 
         // Detect and indicate if a TURN (relay) candidate is found
         if (e.candidate.type == 'relay' || e.candidate.candidate.includes('relay')) {
-          Turn.innerHTML = '🟢 The TURN server is reachable!';
+          Turn.innerHTML = '🟢 O servidor STUN está acessível.';
         }
       };
 
@@ -94,7 +94,7 @@
 
         // Check if the response is successful (HTTP 2xx)
         if (!response.ok) {
-          throw new Error(`Failed to fetch token: ${response.status} ${response.statusText}`);
+          throw new Error(`Falha ao obter o token: ${response.status} ${response.statusText}`);
         }
 
         // Parse the response as JSON
@@ -103,7 +103,7 @@
         // Extract the token from the response
         const token = data?.token;
         if (!token) {
-          throw new Error('No token found in server response.');
+          throw new Error('Nenhum token encontrado na resposta do servidor.');
         }
 
         // Return token
@@ -111,7 +111,7 @@
       } 
       catch (err) {
         // Log and rethrow for higher-level error handling
-        console.error('Error fetching token:', err);
+        console.error('Erro ao obter o token:', err);
       }
     }
 
